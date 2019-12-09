@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tank Game</title>
+		<style type="text/css">
+			#canvas {
+				border: 1px solid #000;
+				background-color: #FFF8F8;
+			}
+
+			.container {
+				width: 100%;
+				clear: both;
+			}
+
+			.p1,
+			.p2 {
+				float: left;
+			}
+			.p2{
+				padding: 8px;
+				display: flex;
+			}
+			#score {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="p1">
+				<canvas id="canvas" width="500" height="400"></canvas>
+			</div>
+			<div class="p2">
+				<h3>Score:&nbsp;
+					<span id="score">0</span>
+				</h3>
+			</div>
+		</div>
+		<script src="draw-image.js"></script>
+		<script src="handle.js"></script>
+		<script src="handel-impact.js"></script>
+		<script src="tank.js"></script>
+	</body>
+</html>
